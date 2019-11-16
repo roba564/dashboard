@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="css/css3.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="Jave/jquery-3.4.1.min.js"></script>
+        <script src="Jave/Java.js"></script>
+        
+</head>
+<body>
+<div class="div1">
+    <div class="div2"><h1 class="h1">تيم خلاق</h1></div>
+    <hr class="hr1">
+    <div class="div3">
+            <span id="s1" class="fas fa-th-large"></span>
+            <label class="h2">داشبورد</label>
+    </div>
+    <div class="div4">
+            <span id="s2"  class="fas fa-user"></span>
+            <label class="h2">بروفايل كاربر</label>
+    </div>
+    <div class="div5">
+            <span id="s3" class="far fa-clipboard"></span>
+            <label class="h2">جدول</label>
+    </div>
+    <div class="div6">
+            <span id="s4" class="fas fa-clone"></span>
+            <label class="h2">تايبوكرافي</label>
+    </div>
+    <div class="div7">
+            <span id="s5" class="fas fa-circle"></span>
+            <label class="h2">آيكن ها</label>
+    </div>
+    <div class="div8">
+            <span id="s6"class="fas fa-map-marker-alt"></span>
+            <label class="h2">نقشه</label>
+    </div>
+    <div class="div9">
+            <span id="s7"class="fas fa-bell"></span>
+            <label class="h2">اعلان ها</label>
+    </div>
+    <div class="div10">
+            <span id="s8"class="fas fa-globe"></span>
+            <label class="h2"> الموقع</label>
+    </div>
+    <div class="div11">
+            <span id="s9" class="fas fa-arrow-alt-circle-up"></span>
+            <label class="h2">upgrade To</label>
+    </div>
+</div>
+<div class="dd2">
+    <h1 class="hh1">داشبورد</h1>
+    <div class="dspan">
+            
+      <hr class="hr2">
+      <div class="dspan1">
+                <div id="ssp3">
+           <span id="sp3"  class="fas fa-user"></span>
+                 </div>
+                 <div id="ssp4">
+                <span id="sp4"  class="fas fa-bell"></span>
+                </div>
+                <div id="ssp5">
+                 <span id="sp5"  class="fas fa-th-large"></span>
+                 </div>
+              <div id="ssp6">
+      <span id="sp6"  class="fas fa-search"></span>
+       </div>
+       <div class="hhh2">
+                <input class="hh2" type="search" placeholder="جستجو..." ></h1>
+        </div>
+       
+    </div>
+    </div>
+    
+    <div class="d1">
+        <h3 class="h3">دنيال كننده</h3>
+        <label class="h22">245+</label>
+        <hr>
+        <div class="dl3">
+        <label class="h5">هم أكنون</label>
+        </div>
+        <div class="dl4">
+        <span id="s11" class="fas fa-history"></span>
+         </div>
+    </div>
+    
+    <div class="dd1">
+        <span id="s10" class="fab fa-twitter"></span>
+    </div>
+    <div class="d2">
+        <h3 class="hh3">مشكلات حل شده</h3>
+        <label class="hh22">75</label>
+        <hr>
+        <div class="dl5">
+        <label class="hh5">توسط كيت هاب</label>
+        </div>
+        <div class="dl6">
+        <span id="sh11" class="fas fa-exclamation-triangle"></span>
+        </div>
+    </div>
+    <div class="ddh1">
+            <span id="sh10" class="fas fa-exclamation-circle"></span>
+    </div>
+    <div class="d3">
+        <h3 class="hhh3">سود</h3>
+        <label class="hhh22">$34و245</label>
+        <hr>
+        <div class="dl7">
+        <label class="hhh5"> ساعات اخبر23</label>
+        </div>
+        <div class="dl8">
+        <span id="shh11" class="far fa-calendar-alt"></span>
+        </div>
+       
+    </div>
+    <div class="ddhh1">
+            <span id="shh10" class="fas fa-home"></span>
+    </div>
+    <div class="d4">
+        <h3 class="hhhh3">فضا مصرف شده</h3>
+        <label class="hhhh22">GB 49/50</label>
+        <hr>
+        <div class="dla">
+        <label class="hhhh5">...فضاي بيشتري داشته باشيد</label>
+         </div>
+         <div class="dl2">
+        <span id="shhh11" class="fas fa-exclamation-triangle"></span>
+       </div>
+        
+    </div>
+    
+    <div class="ddhhh1">
+            <span id="shhh10"class="far fa-clone"></span>
+    </div>
+   
+        <div class="chart">
+        <div class="c1">
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <script type="text/javascript">
+                      google.charts.load('current', {packages:['corechart']});
+                      google.charts.setOnLoadCallback(drawChart);
+                    function drawChart() {
+                      var oldData = google.visualization.arrayToDataTable([
+                        ['Name', 'Popularity'],
+                        ['Cesar', 250],
+                        ['Rachel', 4200],
+                        ['Patrick', 2900],
+                        ['Eric', 8200]
+                      ]);
+                  
+                      
+                  
+                      var colChartBefore = new google.visualization.ColumnChart(document.getElementById('colchart_before'));
+                      var colChartAfter = new google.visualization.ColumnChart(document.getElementById('colchart_after'));
+                      var colChartDiff = new google.visualization.ColumnChart(document.getElementById('colchart_diff'));
+                      var barChartDiff = new google.visualization.BarChart(document.getElementById('barchart_diff'));
+                  
+                      var options = { legend: { position: 'top' } };
+                  
+                      colChartBefore.draw(oldData, options);
+                      colChartAfter.draw(newData, options);
+                  
+                      var diffData = colChartDiff.computeDiff(oldData, newData);
+                      colChartDiff.draw(diffData, options);
+                      barChartDiff.draw(diffData, options);
+                    }
+                  </script>
+                  
+                  <span id='colchart_before' style='width: 240px; height: 150px; display: inline-block'></span>
+                  <span id='colchart_after' style='width: 240px; height: 150px; display: inline-block'></span>
+                  <span id='colchart_diff' style='width: 240px; height: 150px; display: inline-block'></span>
+                  <span id='barchart_diff' style='width: 240px; height: 150px; display: inline-block'></span>     
+            </div>          
+       
+                   
+    <div class="cch1">
+    <h1 class="ch1">وظايف انجام شده </h1>  
+    <span class="fas fa-arrow-up"></span>
+    <h4 class="ch2">55% </h4>  
+    <h4 class="ch3">كارابي اخرين كمبين </h4> 
+    <span class="far fa-clock"><span>
+    <h4 class="ch4">كمبين دو روز يبش ارسال شد</h4> 
+    </div>
+             
+           
+        </div>
+        <div class="chart1">
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <script type="text/javascript">
+                      google.charts.load('current', {packages:['corechart']});
+                      google.charts.setOnLoadCallback(drawChart);
+                    function drawChart() {
+                      var oldData = google.visualization.arrayToDataTable([
+                        ['Major', 'Degrees'],
+                        ['Business', 256070], ['Education', 108034],
+                        ['Social Sciences & History', 127101], ['Health', 81863],
+                        ['Psychology', 74194]]);
+                  
+                     
+                  
+                      var options = { pieSliceText: 'none' };
+                  
+                      var chartBefore = new google.visualization.PieChart(document.getElementById('piechart_before'));
+                      var chartAfter = new google.visualization.PieChart(document.getElementById('piechart_after'));
+                      var chartDiff = new google.visualization.PieChart(document.getElementById('piechart_diff'));
+                  
+                      chartBefore.draw(oldData, options);
+                      chartAfter.draw(newData, options);
+                  
+                      var diffData = chartDiff.computeDiff(oldData, newData);
+                      chartDiff.draw(diffData, options);
+                    }
+                  </script>
+                  <span id='piechart_before' style='width: 240px; height: 150px; display: inline-block'></span>
+                  <span id='piechart_after' style='width: 240px; height: 150px; display: inline-block'></span>
+                  <br>
+                  <span id='piechart_diff' style='width: 240px; height: 150px; position: absolute; left: 250px'></span>  
+                  <div class="ccch1">
+                    <h1 class="ch1">دنبال كندو هاي ايميلي </h1>  
+                    <h4 class="cch3">كارابي اخرين كمبين</h4> 
+                    <span class="far fa-clock kk"><span>
+                    <h4 class="cch4">كمبين دو روز يبش ارسال شد</h4> 
+                    </div>   
+          
+                 
+    </div>
+    
+    <div class="chart2">
+      <div class="s1">
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <script type="text/javascript">
+                      google.charts.load('current', {'packages':['bar']});
+                      google.charts.setOnLoadCallback(drawChart);
+                
+                      function drawChart() {
+                        var data = google.visualization.arrayToDataTable([
+                          ['Year', 'Sales', 'Expenses', 'Profit'],
+                          ['2014', 1000, 400, 200],
+                          ['2015', 1170, 460, 250],
+                          ['2016', 660, 1120, 300],
+                          ['2017', 1030, 540, 350]
+                        ]);
+                
+                        var options = {
+                          chart: {
+                            title: 'Company Performance',
+                            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+                          }
+                        };
+                
+                        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+                
+                        chart.draw(data, google.charts.Bar.convertOptions(options));
+                      }
+                    </script>
+                  </head>
+                  <body>
+                    <div id="columnchart_material" style="width: 250px; height: 150px;"></div>            
+                    <div class="cccch1">
+                      <h1 class="ch1">فروش روزانه</h1>  
+                      <h4 class="ccch3">رشد در فروش امروز</h4> 
+                      <span class="far fa-clock   kkk"><span>
+                      <h4 class="ch4">دقيقة يبش</h4> 
+                      </div>   
+                    </div>
+    </div>
+    
+</div>
+</body>
+</html>

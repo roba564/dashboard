@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    
+    <script src="Jave/jquery-3.4.1.min.js"></script>
+        <script src="Jave/Java.js"></script>
+        
+</head>
+<body>
+        <div class="div1">
+                <div class="div2"><h1 class="h1">CREATIVE TIM</h1></div>
+                <hr class="hr1">
+                <div class="div3">
+                    <ul class="mainnav">
+                    <li class= "mainli active">   <span id="s1" class="fas fa-th-large"></span>
+                        <a href="Dashboard.html" class="h2">Dashboard</a>
+                    </li>   
+                </div>
+                <div class="div4">
+                    <li class="mainli"> <span id="s2"  class="fas fa-user"></span>
+                        <a href="user profile.html" class="h2">user profile</a>
+                    </li>
+                </div>
+                <div class="div5">
+                  <li class="mainli">  <span id="s3" class="far fa-clipboard"></span>
+                        <a href="Table List.html" class="h2">table list</a>
+                </li>  
+                </div>
+                <div class="div6">
+                     <li class="mainli "> <span id="s4" class="fas fa-clone"></span>
+                        <a href="#" class="h2">typography</a>
+                    </li> 
+                </div>
+                <div class="div7">
+                    <li class="mainli"> <span id="s5" class="fas fa-circle"></span>
+                        <a href="#" class="h2">icons</a>
+                    </li> 
+                </div>
+                <div class="div8">
+                    <li class="mainli">    <span id="s6"class="fas fa-map-marker-alt"></span>
+                        <a href="#" class="h2">map</a>
+                    </li> 
+                </div>
+                <div class="div9">
+                    <li class="mainli">    <span id="s7"class="fas fa-bell"></span>
+                        <a href="#" class="h2">Notifications</a>
+                    </li> 
+                </div>
+                <div class="div10">
+                    <li class="mainli">   <span id="s8"class="fas fa-globe"></span>
+                        <a href="#" class="h2">RTL SUPPORT</a>
+                    </li> 
+                </div>
+                <div class="div11">
+                    <li class="mainli">   <span id="s9" class="fas fa-arrow-alt-circle-up"></span>
+                        <a href="#" class="h2">UPGRADTo PRO</a>
+                    </li> 
+                </div>
+                
+                
+            </ul>  
+            </div>
+<div class="dd2">
+    <h1 class="hh1">Dashboard</h1>
+    <div class="dspan">
+      <input class="hh2" type="search" placeholder="Serch..." ></h1>
+      <hr class="hr2">
+      <div class="dspan1">
+      <span id="sp6"  class="fas fa-search"></span>
+      <span id="sp5"  class="fas fa-th-large"></span>
+      <span id="sp4"  class="fas fa-bell"></span>
+      <span id="sp3"  class="fas fa-user"></span>
+    </div>
+    </div>
+    
+    <div class="d1">
+        <h3 class="h3">Used Space</h3>
+        <label class="h22">$49/50 GB</label>
+        <hr>
+        <span id="s11" class="fas fa-exclamation-triangle"></span>
+        <label class="h5">Get More Space...</label>
+    </div>
+    <div class="dd1">
+            <span id="s10" class="far fa-clone"></span>
+    </div>
+    <div class="d2">
+        <h3 class="hh3">Revenue</h3>
+        <label class="hh22">$34,245</label>
+        <hr>
+        <span id="sh11" class="fas fa-exclamation-triangle"></span>
+        <label class="hh5">Last 24 Hours</label>
+    </div>
+    <div class="ddh1">
+            <span id="sh10" class="fas fa-home"></span>
+    </div>
+    <div class="d3">
+        <h3 class="hhh3">Fixed Issues</h3>
+        <label class="hhh22">75</label>
+        <hr>
+        <span id="shh11" class="fas fa-exclamation-triangle"></span>
+        <label class="hhh5">Tracked from Github</label>
+    </div>
+    <div class="ddhh1">
+            <span id="shh10" class="fas fa-exclamation-circle"></span>
+    </div>
+    <div class="d4">
+        <h3 class="hhhh3">Followers</h3>
+        <label class="hhhh22">+245</label>
+        <hr>
+        <span id="shhh11" class="fas fa-exclamation-triangle"></span>
+        <label class="hhhh5">Just Updated</label>
+    </div>
+    <div class="ddhhh1">
+            <span id="shhh10"class="fab fa-twitter"></span>
+    </div>
+    <div class="chart">
+    <div class="c1">
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript">
+                  google.charts.load('current', {packages:['corechart']});
+                  google.charts.setOnLoadCallback(drawChart);
+                function drawChart() {
+                  var oldData = google.visualization.arrayToDataTable([
+                    ['Name', 'Popularity'],
+                    ['Cesar', 250],
+                    ['Rachel', 4200],
+                    ['Patrick', 2900],
+                    ['Eric', 8200]
+                  ]);
+              
+                  
+              
+                  var colChartBefore = new google.visualization.ColumnChart(document.getElementById('colchart_before'));
+                  var colChartAfter = new google.visualization.ColumnChart(document.getElementById('colchart_after'));
+                  var colChartDiff = new google.visualization.ColumnChart(document.getElementById('colchart_diff'));
+                  var barChartDiff = new google.visualization.BarChart(document.getElementById('barchart_diff'));
+              
+                  var options = { legend: { position: 'top' } };
+              
+                  colChartBefore.draw(oldData, options);
+                  colChartAfter.draw(newData, options);
+              
+                  var diffData = colChartDiff.computeDiff(oldData, newData);
+                  colChartDiff.draw(diffData, options);
+                  barChartDiff.draw(diffData, options);
+                }
+              </script>
+              
+              <span id='colchart_before' style='width: 240px; height: 150px; display: inline-block'></span>
+              <span id='colchart_after' style='width: 240px; height: 150px; display: inline-block'></span>
+              <span id='colchart_diff' style='width: 240px; height: 150px; display: inline-block'></span>
+              <span id='barchart_diff' style='width: 240px; height: 150px; display: inline-block'></span>     
+        </div>          
+    <div class="cc1">
+               
+<div class="cch1">
+<h1 class="ch1">Daily Sales </h1>  
+<span class="fas fa-arrow-up"></span>
+<h4 class="ch2">55% </h4>  
+<h4 class="ch3">increse in today Sales </h4> 
+<span class="far fa-clock"><span>
+<h4 class="ch4">increse in today Sales </h4> 
+</div>
+         
+        </div>
+    </div>
+    <div class="chart1">
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript">
+                  google.charts.load('current', {packages:['corechart']});
+                  google.charts.setOnLoadCallback(drawChart);
+                function drawChart() {
+                  var oldData = google.visualization.arrayToDataTable([
+                    ['Major', 'Degrees'],
+                    ['Business', 256070], ['Education', 108034],
+                    ['Social Sciences & History', 127101], ['Health', 81863],
+                    ['Psychology', 74194]]);
+              
+                 
+              
+                  var options = { pieSliceText: 'none' };
+              
+                  var chartBefore = new google.visualization.PieChart(document.getElementById('piechart_before'));
+                  var chartAfter = new google.visualization.PieChart(document.getElementById('piechart_after'));
+                  var chartDiff = new google.visualization.PieChart(document.getElementById('piechart_diff'));
+              
+                  chartBefore.draw(oldData, options);
+                  chartAfter.draw(newData, options);
+              
+                  var diffData = chartDiff.computeDiff(oldData, newData);
+                  chartDiff.draw(diffData, options);
+                }
+              </script>
+              <span id='piechart_before' style='width: 240px; height: 150px; display: inline-block'></span>
+              <span id='piechart_after' style='width: 240px; height: 150px; display: inline-block'></span>
+              <br>
+              <span id='piechart_diff' style='width: 240px; height: 150px; position: absolute; left: 250px'></span>  
+                   
+      
+             
+</div>
+
+<div class="chart2">
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript">
+                  google.charts.load('current', {'packages':['bar']});
+                  google.charts.setOnLoadCallback(drawChart);
+            
+                  function drawChart() {
+                    var data = google.visualization.arrayToDataTable([
+                      ['Year', 'Sales', 'Expenses', 'Profit'],
+                      ['2014', 1000, 400, 200],
+                      ['2015', 1170, 460, 250],
+                      ['2016', 660, 1120, 300],
+                      ['2017', 1030, 540, 350]
+                    ]);
+            
+                    var options = {
+                      chart: {
+                        title: 'Company Performance',
+                        subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+                      }
+                    };
+            
+                    var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+            
+                    chart.draw(data, google.charts.Bar.convertOptions(options));
+                  }
+                </script>
+              </head>
+              <body>
+                <div id="columnchart_material" style="width: 250px; height: 150px;"></div>            
+                    
+</div>
+    
+</div>
+</body>
+</html>
